@@ -324,6 +324,18 @@ footer .custom-link__logo {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/hero/hero-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .solutions-section {
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero/hero-bg@2x.jpg);
+  }
 }
 
 .solutions-section__container {
