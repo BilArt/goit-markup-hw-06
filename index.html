@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,13 +19,11 @@
   <body>
     <header>
       <div class="container flex">
-        <nav>
+        <nav class="flex">
+          <a class="custom-link__logo" href="./index.html"
+            ><span>WEB</span>STUDIO</a
+          >
           <ul class="flex header__menu">
-            <li>
-              <a class="custom-link__logo" href="./index.html"
-                ><span>WEB</span>STUDIO</a
-              >
-            </li>
             <li><a class="custom-link current" href="index.html">Studio</a></li>
             <li><a class="custom-link" href="portfolio.html">Portfolio</a></li>
             <li><a class="custom-link" href="/">Contacts</a></li>
@@ -47,9 +45,14 @@
             </li>
           </ul>
         </address>
+        <button class="burger-menu">
+          <svg width="32" height="22">
+            <use href="./images/svg/iconpack.svg#icon-burger-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
-
+   
     <main>
       <section class="solutions-section">
         <div class="container solutions-section__container">
@@ -66,7 +69,7 @@
       <section class="strategy-section">
         <div class="container">
           <h2 class="title-2 visually-hidden">Our Strategy</h2>
-          <ul class="flex strategy-section__cards">
+          <ul class="strategy-section__cards">
             <li class="strategy-section__cards-item">
               <div class="strategy-section__cards-item__svg">
                 <svg width="64" height="64">
@@ -121,7 +124,7 @@
           </ul>
         </div>
       </section>
-
+ 
       <section class="doing-section">
         <div class="container">
           <h2 class="title-2">What are we doing</h2>
@@ -129,7 +132,10 @@
             <li class="doing-section__cards-item">
               <img
                 src="./images/competencies/computer.jpg"
-                srcset="./images/competencies/computer.jpg 1x, ./images/competencies/computer@2x.jpg 2x"
+                srcset="
+                  ./images/competencies/computer.jpg    1x,
+                  ./images/competencies/computer@2x.jpg 2x
+                "
                 height="300"
                 width="360"
                 alt="Analyst"
@@ -138,7 +144,10 @@
             <li class="doing-section__cards-item">
               <img
                 src="./images/competencies/mobile_ui.jpg"
-                srcset="./images/competencies/mobile_ui.jpg 1x, ./images/competencies/mobile_ui@2x.jpg 2x"
+                srcset="
+                  ./images/competencies/mobile_ui.jpg    1x,
+                  ./images/competencies/mobile_ui@2x.jpg 2x
+                "
                 height="300"
                 width="360"
                 alt="Mobile UI"
@@ -147,7 +156,10 @@
             <li class="doing-section__cards-item">
               <img
                 src="./images/competencies/interface.jpg"
-                srcset="./images/competencies/interface.jpg 1x, ./images/competencies/interface@2x.jpg 2x"
+                srcset="
+                  ./images/competencies/interface.jpg    1x,
+                  ./images/competencies/interface@2x.jpg 2x
+                "
                 height="300"
                 width="360"
                 alt="Interface"
@@ -160,19 +172,21 @@
       <section class="team-section">
         <div class="container">
           <h2 class="title-2">Our Team</h2>
-          <ul class="flex team-section__cards">
-
+          <ul class="team-section__cards">
             <li class="team-section__cards-item">
               <img
                 class="team-section__cards-item__img"
                 src="./images/team/mark_guerrero.jpg"
-                srcset="./images/team/mark_guerrero.jpg 1x, ./images/team/mark_guerrero@2x.jpg 2x"
+                srcset="
+                  ./images/team/mark_guerrero.jpg    1x,
+                  ./images/team/mark_guerrero@2x.jpg 2x
+                "
                 height="260"
                 width="264"
                 alt="Mark's photo"
               />
               <div class="team-section__cards-item__text">
-                <h3 class="title-3">Mark Guerrero</h3>
+                <h4 class="title-4">Mark Guerrero</h4>
                 <p class="team-section__cards-item__p">Product Designer</p>
                 <div class="team-section__cards-item__links">
                   <ul class="team-section__cards-item__links-div">
@@ -221,13 +235,16 @@
               <img
                 class="team-section__cards-item__img"
                 src="./images/team/tom_ford.jpg"
-                srcset="./images/team/tom_ford.jpg 1x, ./images/team/tom_ford@2x.jpg 2x"
+                srcset="
+                  ./images/team/tom_ford.jpg    1x,
+                  ./images/team/tom_ford@2x.jpg 2x
+                "
                 height="260"
                 width="264"
                 alt="Tom's photo'"
               />
               <div class="team-section__cards-item__text">
-                <h3 class="title-3">Tom Ford</h3>
+                <h4 class="title-4">Tom Ford</h4>
                 <p class="team-section__cards-item__p">Frontend Developer</p>
                 <div class="team-section__cards-item__links">
                   <ul class="team-section__cards-item__links-div">
@@ -276,13 +293,16 @@
               <img
                 class="team-section__cards-item__img"
                 src="./images/team/camila_garcia.jpg"
-                srcset="./images/team/camila_garcia.jpg 1x, ./images/team/camila_garcia@2x.jpg 2x"
+                srcset="
+                  ./images/team/camila_garcia.jpg    1x,
+                  ./images/team/camila_garcia@2x.jpg 2x
+                "
                 height="260"
                 width="264"
                 alt="Camilas photo"
               />
               <div class="team-section__cards-item__text">
-                <h3 class="title-3">Camila Garcia</h3>
+                <h4 class="title-4">Camila Garcia</h4>
                 <p class="team-section__cards-item__p">Marketing</p>
                 <div class="team-section__cards-item__links">
                   <ul class="team-section__cards-item__links-div">
@@ -331,13 +351,16 @@
               <img
                 class="team-section__cards-item__img"
                 src="./images/team/daniel_wilson.jpg"
-                srcset="./images/team/daniel_wilson.jpg 1x, ./images/team/daniel_wilson@2x.jpg 2x"
+                srcset="
+                  ./images/team/daniel_wilson.jpg    1x,
+                  ./images/team/daniel_wilson@2x.jpg 2x
+                "
                 height="260"
                 width="264"
                 alt="Daniel's photo'"
               />
               <div class="team-section__cards-item__text">
-                <h3 class="title-3">Daniel Wilson</h3>
+                <h4 class="title-4">Daniel Wilson</h4>
                 <p class="team-section__cards-item__p">UI Designer</p>
                 <div class="team-section__cards-item__links">
                   <ul class="team-section__cards-item__links-div">
@@ -434,10 +457,11 @@
           </ul>
         </div>
       </section>
-    </main> 
+    
+    </main>
 
     <footer class="footer">
-      <div class="container footer__container">
+      <div class="container">
         <div class="footer__text">
           <a class="custom-link__logo" href="./index.html"
             ><span>WEB</span>STUDIO</a
@@ -449,7 +473,7 @@
         </div>
 
         <div class="footer__icons">
-          <h4 class="title-4">Social Media</h4>
+          <p>Social Media</p>
           <ul class="footer__icons__list">
             <li class="footer__icons__list-item">
               <a class="list-item__link" href="./">
@@ -505,7 +529,7 @@
         </div>
       </div>
     </footer>
-
+<!--
     <div class="data-modal is-hidden">
       <div class="modal__box">
         <button type="button" class="data-modal-close">
@@ -571,6 +595,63 @@
       </div>
     </div>
 
+    <div class="mobile-menu">
+      <button type="button" class="menu-btn__close">
+        <svg width="8" height="8">
+          <use href="./images/svg/iconpack.svg#icon-close_btn"></use>
+        </svg>
+      </button>
+      <div class="mobile-menu__container">
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__list__item"><a href="">Studio</a></li>
+          <li class="mobile-menu__list__item"><a href="">Portfolio</a></li>
+          <li class="mobile-menu__list__item"><a href="">Contacts</a></li>
+        </ul>
+
+        <address class="mobile-menu__address">
+          <a class="mobile-menu__address__tel" href="tel:+110001111111"
+            >+11 (000) 111-11-11</a
+          >
+          <a class="mobile-menu__address__mail" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+
+          <ul class="mobile-menu__address__links-div">
+            <li class="mobile-menu__address__links__icon">
+              <a class="icon__link" href="./">
+                <svg width="16" height="16">
+                  <use href="./images/svg/iconpack.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu__address__links__icon">
+              <a class="icon__link" href="./">
+                <svg width="16" height="16">
+                  <use href="./images/svg/iconpack.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu__address__links__icon">
+              <a class="icon__link" href="./">
+                <svg width="16" height="16">
+                  <use href="./images/svg/iconpack.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu__address__links__icon">
+              <a class="icon__link" href="./">
+                <svg width="16" height="16">
+                  <use href="./images/svg/iconpack.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </address>
+      </div>
+    </div>
+
+  -->
     <script defer src="./js/new-modal.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
