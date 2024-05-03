@@ -1099,6 +1099,7 @@ p {
 
   /* Footer */
   .footer__container {
+    width: 100%;
     justify-content: space-between;
   }
 }
