@@ -68,7 +68,8 @@ p {
 
 @media (min-width: 320px) {
   .container {
-    margin: 0 16px 0 16px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .title-1 {
@@ -259,7 +260,6 @@ p {
   .team-section__cards-item {
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
       0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-    width: calc(100% - 133px);
     border-radius: 0 0 4px 4px;
     text-align: center;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
@@ -733,6 +733,11 @@ p {
 }
 
 @media (min-width: 768px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .title-1 {
     font-size: 56px;
     line-height: 1.07143;
@@ -766,8 +771,8 @@ p {
 
   .custom-link {
     display: block;
-    margin-top: 24px;
-    margin-bottom: 24px;
+    padding-top: 24px;
+    padding-bottom: 24px;
     text-decoration: none;
     color: inherit;
     font-style: normal;
@@ -792,6 +797,18 @@ p {
     width: 100%;
     background-color: transparent;
     transition: background-color ease-in-out;
+  }
+
+  .custom-link:active .current::after {
+    color: var(--ocean-color);
+  }
+
+  .custom-link:hover .current::after {
+    color: var(--ocean-color);
+  }
+
+  .custom-link:focus .current::after {
+    color: var(--ocean-color);
   }
 
   .custom-link.current {
@@ -877,7 +894,7 @@ p {
   }
 
   .customers-section__list-item {
-    width: calc((100% - 232px) / 3);
+    width: calc((100% - 48px) / 3);
   }
 
   /* Footer */
@@ -886,10 +903,11 @@ p {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
-    padding: 96px 108px;
     text-align: justify;
     gap: 72px 24px;
+    width: 584px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .footer__text {
@@ -900,6 +918,7 @@ p {
   }
 
   .footer__text .custom-link__logo {
+    text-align: left;
     padding: 0;
     margin-bottom: 16px;
   }
@@ -936,8 +955,9 @@ p {
 
 @media (min-width: 1158px) {
   .container {
-    padding-left: 156px;
-    padding-right: 156px;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1158px;
   }
 
   .title-3 {
@@ -1075,6 +1095,11 @@ p {
   .customers-section__list-item {
     width: calc((100% - 120px) / 6);
     height: 88px;
+  }
+
+  /* Footer */
+  .footer__container {
+    justify-content: space-between;
   }
 }
 
